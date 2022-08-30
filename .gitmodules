@@ -1,0 +1,6 @@
+[submodule "vimrc/bundel/YouCompleteMe"]
+	path = vimrc/bundel/YouCompleteMe
+	url = https://github.com/ycm-core/YouCompleteMe.git
+[submodule "vimrc/vimrc/bundle/YouCompleteMe"]
+	path = vimrc/vimrc/bundle/YouCompleteMe
+	url = https://github.com/ycm-core/YouCompleteMe.git
