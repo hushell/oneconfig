@@ -33,7 +33,7 @@ curl -sLo ~/miniconda.sh https://repo.anaconda.com/miniconda/Miniconda3-py39_4.1
 conda activate base
 conda init
 
-# Install Pytorch + CUDA 11.1
+# Install Pytorch with CUDA 11.3
 conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch
 conda clean -ya
 
@@ -53,6 +53,7 @@ echo "defshell -bash" > ~/.screenrc
 echo "export http_proxy=http://106.1.147.165:8080" >> ~/.bashrc
 echo "export https_proxy=http://106.1.147.165:8080" >> ~/.bashrc
 echo "export cbb11=shell.hu@106.1.153.167" >> ~/.bashrc
+echo "export cbb27=shell_hu@106.1.153.201" >> ~/.bashrc
 
 # bash aliases (ref: https://opensource.com/article/19/7/bash-aliases)
 echo "alias screen='screen -U'" >> ~/.bashrc
