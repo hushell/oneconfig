@@ -19,6 +19,7 @@ sudo apt-get update && sudo apt-get install -y \
     git-core bash-completion unzip \
     libjpeg-dev libpng-dev libsndfile1 \
     freeglut3-dev libx11-dev libxmu-dev libxi-dev libglu1-mesa libglu1-mesa-dev
+    vim-nox python3-dev
 
 # Cleaning
 apt-get autoremove -y && \
@@ -33,12 +34,13 @@ curl -sLo ~/miniconda.sh https://repo.anaconda.com/miniconda/Miniconda3-py39_4.1
 conda activate base
 conda init
 
-# Install Pytorch with CUDA 11.3
+# Install Pytorch with CUDA 11.3, and Vim 9
 conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch
+conda install -c conda-forge vim
 conda clean -ya
 
 # pip
-pip install tqdm jupyter jupyterlab matplotlib pandas
+pip install tqdm jupyter jupyterlab matplotlib pandas cmake
 pip install numpy Cython dotmap gym h5py blosc opencv-python opencv-python-headless
 pip install --upgrade 'jedi<0.18.0'
 
