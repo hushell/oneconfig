@@ -13,13 +13,16 @@ sudo apt-get install -y \
 # System packages
 sudo apt-get update && sudo apt-get install -y \
     build-essential pkg-config cmake gcc g++ ctags \
-    software-properties-common \
+    software-properties-common python3-dev \
     libopenmpi-dev openmpi-bin \
     ssh vim screen htop wget tree \
     git-core bash-completion unzip \
     libjpeg-dev libpng-dev libsndfile1 \
     freeglut3-dev libx11-dev libxmu-dev libxi-dev libglu1-mesa libglu1-mesa-dev
-    vim-nox python3-dev
+
+sudo add-apt-repository -y ppa:jonathonf/vim
+sudo apt-get -y update
+sudo apt-get -y install vim
 
 # Cleaning
 apt-get autoremove -y && \
@@ -36,7 +39,6 @@ conda init
 
 # Install Pytorch with CUDA 11.3, and Vim 9
 conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch
-conda install -c conda-forge vim
 conda clean -ya
 
 # pip
