@@ -8,9 +8,11 @@ from os import path
 
 #--- Globals ----------------------------------------------
 PLUGINS = """
+bufexplorer https://github.com/corntrace/bufexplorer
 ctrlp.vim https://github.com/kien/ctrlp.vim
 minibufexpl.vim https://github.com/fholgado/minibufexpl.vim
 nerdtree https://github.com/scrooloose/nerdtree
+snipmate-snippets https://github.com/scrooloose/snipmate-snippets
 vim-coffee-script https://github.com/kchmck/vim-coffee-script
 vim-indent-object https://github.com/michaeljsmith/vim-indent-object
 vim-markdown https://github.com/tpope/vim-markdown
