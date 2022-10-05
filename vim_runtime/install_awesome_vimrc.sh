@@ -16,7 +16,7 @@ source ~/.vim_runtime/my_configs.vim
 catch
 endtry' > ~/.vimrc
 
-echo "Installing YouCompleteMe"
-
-cd bundle
-git clone https://github.com/ycm-core/YouCompleteMe.git
+#echo "Installing YouCompleteMe"
+#
+#cd bundle
+#git clone https://github.com/ycm-core/YouCompleteMe.git
