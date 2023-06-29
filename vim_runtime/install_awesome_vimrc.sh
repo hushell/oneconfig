@@ -1,6 +1,6 @@
 rm -rf ~/.vim_runtime
 cp -R . ~/.vim_runtime
-mkdir ~/.vim_runtime/temp_dirs
+mkdir -p ~/.vim_runtime/temp_dirs
 cd ~/.vim_runtime
 
 echo "Installing vimrcs"
