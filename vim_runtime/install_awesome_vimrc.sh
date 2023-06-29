@@ -3,7 +3,7 @@ cp -R . $HOME/.vim_runtime
 mkdir -p $HOME/.vim_runtime/temp_dirs
 cd $HOME/.vim_runtime
 
-echo "Installing vimrcs"
+echo "Installing vimrcs..."
 
 echo 'set runtimepath+=$HOME/.vim_runtime
 
@@ -15,6 +15,8 @@ try
 source $HOME/.vim_runtime/my_configs.vim
 catch
 endtry' > $HOME/.vimrc
+
+echo "... enjoy vim!"
 
 #echo "Installing YouCompleteMe"
 #
