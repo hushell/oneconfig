@@ -75,7 +75,7 @@ esac
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
-    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+    test -r $HOME/.dircolors && eval "$(dircolors -b $HOME/.dircolors)" || eval "$(dircolors -b)"
     alias ls='ls --color=auto'
     #alias dir='dir --color=auto'
     #alias vdir='vdir --color=auto'
@@ -102,8 +102,8 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 # ~/.bash_aliases, instead of adding them here directly.
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
 
-if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
+if [ -f $HOME/.bash_aliases ]; then
+    . $HOME/.bash_aliases
 fi
 
 # enable programmable completion features (you don't need to enable
@@ -126,11 +126,11 @@ export PATH=/usr/share/centrifydc/bin:$PATH
 
 # git related
 source /usr/share/bash-completion/completions/git
-cp gitconfig ~/.gitconfig
+cp gitconfig $HOME/.gitconfig
 
 # bash stuffs
 export CONDA_AUTO_UPDATE_CONDA=false 
-echo "defshell -bash" > ~/.screenrc
+echo "defshell -bash" > $HOME/.screenrc
 
 # bash aliases (ref: https://opensource.com/article/19/7/bash-aliases)
 alias screen='screen -U'
@@ -141,7 +141,7 @@ alias lt='ls --human-readable --size -1 -S --classify'
 alias lm='ls -lt -1'
 alias histg='history|grep'
 alias cpv='rsync -ah --info=progress2'
-alias delete='mv --force -t ~/.local/share/Trash'
+alias delete='mv --force -t $HOME/.local/share/Trash'
 alias condaa='conda activate'
 alias condad='conda deactivate'
 alias screen='screen -U'
